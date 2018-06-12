@@ -40,7 +40,7 @@ public class TestFehlermeldungTest {
     System.out.println("User wird erstellt");
     
   driver.get(baseUrl + "/wordpress/wp-login.php?loggedout=true");
-     
+     Thread.sleep(1000);
     driver.findElement(By.id("user_login")).sendKeys("opensourcecms");
     driver.findElement(By.id("user_pass")).sendKeys("opensourcecms");
     driver.findElement(By.id("wp-submit")).click();
